@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Modal, Button, Form, Alert } from "react-bootstrap";
-import t from "counterpart";
 import "././style/QrOrder.scss";
 import PaymentScreen from "./components/PaymentScreen";
 
@@ -121,7 +120,7 @@ const QrOrder = ({ language }) => {
 
   const handleSplitBill = () => {
     if (selectedSum === 0) {
-      setError(t("Please select a product"));
+      setError("Please select a product");
     } else {
       setError("");
       setShowSplitBillModal(true);
@@ -130,7 +129,7 @@ const QrOrder = ({ language }) => {
 
   const handlePayFullBill = () => {
     if (selectedSum === 0) {
-      setError(t("Please select a product"));
+      setError("Please select a product");
     } else {
       setError("");
       setShowFullBillModal(true);
