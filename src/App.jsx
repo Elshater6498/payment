@@ -1,5 +1,12 @@
+import QrOrder from "./QrOrder";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
-  return <>hello world</>;
+  return (
+    <div>
+      <QrOrder />
+    </div>
+  );
 }
 
 export default App;
